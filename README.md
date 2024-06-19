@@ -1,0 +1,1 @@
+# QA-app-using-PineCone-and-OpenAI
