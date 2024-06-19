@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+#api keys hidden
 
 PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
 PINECONE_ENV = os.getenv('PINECONE_ENV')
@@ -35,7 +36,7 @@ def doc_preprocessing():
 
 @st.cache_resource
 def embedding_db():
-    # we use the openAI embedding model
+   
     embeddings = OpenAIEmbeddings()
     pinecone.init(
         api_key=PINECONE_API_KEY,
